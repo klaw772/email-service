@@ -19,7 +19,7 @@ module.exports.sendEmail = async (event) => {
         Data: 'Hello from Lambda',
       },
     },
-    Source: 'example@hello.com', // This can be any email address, the email you want to show as the "sender" when the email is received
+    Source: 'kathleen.law@multiverse.io', // This can be any email address, the email you want to show as the "sender" when the email is received
   };
   await ses.sendEmail(params).promise();
   // in the object that is `return`ed, replace the `body.message` property with `Email sent to ${queryParams.email}`

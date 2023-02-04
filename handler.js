@@ -20,7 +20,7 @@ module.exports.sendEmail = async (event) => {
   subject = subject || 'Hello from Lambda';
   const params = {
     Destination: {
-      ToAddresses: ['kathleen.law@multiverse.io'], // This should be your email address
+      ToAddresses: ['kathleenmlaw1@gmail.com'], // This should be your email address
     },
     Message: {
       Body: {
@@ -32,7 +32,7 @@ module.exports.sendEmail = async (event) => {
         Data: 'Hello from Lambda',
       },
     },
-    Source: 'kathleen.law@multiverse.io', // This can be any email address, the email you want to show as the "sender" when the email is received
+    Source: 'kathleenmlaw1@gmail.com', // This can be any email address, the email you want to show as the "sender" when the email is received
   };
   await ses.sendEmail(params).promise();
   
